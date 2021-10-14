@@ -1,3 +1,22 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Sunbox Theme"
+theme = "sunbox-theme-hugo"
+paginate = 5
+copyright = ""
+
+[params]
+  scheme = "gruvbox"
+  description = "Pantoufle"
+
+[menu]
+  [[menu.main]]
+    name = "Feed"
+    url = "/index.xml"
+  [[menu.main]]
+    name = "Repository"
+    url = "https://github.com/bake/solar-theme-hugo/"
+  [[menu.other]]
+    name = "Hugo"
+    url = "https://themes.gohugo.io/solar-theme-hugo/"
+  [[menu.other]]
+    name = "Demo"
+    url = "https://themes.gohugo.io/theme/solar-theme-hugo/"
