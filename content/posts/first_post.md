@@ -13,6 +13,21 @@ asdf
 > asdasd
 
 ## HEAD2
+{{< tweet 877500564405444608 >}}
+
+
+{{< youtube w7Ft2ymGmfc >}}
+
+[Neat]({{< ref "about.md" >}})
+
+{{< gist spf13 7896402 >}}
+
+
+
+
+
+
+### HEAD 3
 
 ```yaml
 a:
