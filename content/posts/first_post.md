@@ -1,21 +1,31 @@
 ---
-title: "First_post1"
-date: 2021-10-14T22:45:36+02:00
+weight: 4
+title: "Basic Markdown Syntax"
+date: 2019-12-01T21:57:40+08:00
+lastmod: 2020-01-01T16:45:40+08:00
 draft: false
 author: "hjanuschka"
+description: "This article shows the basic Markdown syntax and format."
 ---
 
-hello
+# HEAD1
+asdf
+> asdasd
+
+## HEAD2
 
 ```yaml
-a: 1
-  b: asdf
+a:
+  b: 123
 ```
 
-```sh
+```bash
 #!/bin/bash
+echo "asdf"
+```
 
-
-echo
-
+```php
+<?php
+echo "asdf";
+?>
 ```

@@ -1,74 +1,59 @@
-baseurl = "/"
-languageCode = "en-us"
-theme = "terminal"
-paginate = 5
+baseURL = "/"
+author = "Steve Francia"
+copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "paper"
+#title = "hjanuschka"
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  twitter = 'hjanuschka'
+  github = 'hjanuschka'
+# ------------------------------
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+[menu]
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
 
-  # show selector to switch language
-  showLanguageSelector = false
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
 
-  # set theme to full screen width
-  fullWidthTheme = false
+[privacy]
 
-  # center theme with default width
-  centerTheme = false
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  [privacy.instagram]
+    disabled = false
+    simple = true
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+[services]
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+  [services.instagram]
+    disableInlineCSS = true
 
-    [languages.en.params.logo]
-      logoText = "Terminal"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+  [services.twitter]
+    disableInlineCSS = true
